@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
+/*滚动条出现居中内容不晃动*/
+html {
+  overflow-y: scroll;
+}
+
+:root {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+/*开始*/
+html{
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font: 400 16px/1.5 'Cutive Mono','文泉驿微米黑',"Courier New", FangSong, STFangsong, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3{
+  font-weight: 400;
+}
+
+.smallcap{
+  font-variant: small-caps;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.logo{
+  width: 260px;
+  height: 40px;
+  background-image: url("../images/yuweixingshu_black.PNG");
+}

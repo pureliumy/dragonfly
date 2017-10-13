@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  - var post=[{title:'Hello',content:'这是一个测试标题，它可以很长'},{title:'Hello',content:'这是一个测试标题，它可以很长'},{title:'Hello',content:'这是一个测试标题，它可以很长'}]
+  header
+    div.logo
+  section
+    p Hi, I'm Alex. I graduated from FDU in July 2015, and now work at SAP Labs China as a frontend developer.
+
+    p You will find me on github @syaning and npm @syaning. Or you can email me at syaningv(at)gmail.com.
+
+    p Here you may find technical books I have read.
+
+    p 凤歌将中国传统数术，中医，天文，机械制作五行阴阳等知识融入作品之中，洋洋洒洒数十万字，文笔细腻，文章骨骼清晰，虽然说是模仿，但也不愧为领军之作。凤大要纵极想象，向“姑射之山”进发如此宏大的志气实在可嘉。他的笔名“凤歌”应该是取自那句在他书中屡次出现的句子“往者不可谏来者犹可追”。《史记 孔子世家》中记载“楚狂接舆哥而过孔子，曰 “凤兮凤兮，何德之衰，往者不可谏兮，来者犹可追也！已而已而，今之从政者殆而！”于是由此为典故，唐代李白有诗“我本楚狂人，凤歌笑孔丘”，我想既以凤歌为名，正是有超越前人之意。这种内在的力量是巨大的，正所谓大音希声。而北大才女、新武侠作者步非烟在第三届今古传奇武侠文学暨黄易武侠文学特别奖“颁奖典礼上大胆称”要革金庸的命“，”逼金庸退位“。虽然也是志气可嘉，可是与她的浮躁的方式相比。凤歌沉稳的继承而后超越，不骄不躁，谦虚而好学越发显得令人佩服。
+
+    p 《昆仑》又有《沧海》，俨然已经有独树一家的创新意味。但愿继《沧海》之后，凤大继续向“姑射之山”前进，创作出令人耳目一新的好作品。虽然很多人不理解武侠小说，但是用北大醉侠孔教授的话来说“曙光还未出现，但是依旧在黑夜里，马不停蹄的向前奔跑”
+
+  h2.smallcap Post
+    ul
+      each i in post
+        li
+          h3.smallcap= i.title
+  section
+    h2.smallcap Projects
+    ul
+      each i in post
+        li
+          h3.smallcap= i.title
+          p= i.content
